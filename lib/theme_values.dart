@@ -28,7 +28,7 @@ final sunnyTheme = ThemeData(
     ),
     headline5: TextStyle(
       color: Colors.black,
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: FontWeight.w500,
     ),
     headline6: TextStyle(
@@ -83,7 +83,7 @@ final rainyTheme = ThemeData(
     ),
     headline5: TextStyle(
       color: Colors.white,
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: FontWeight.w500,
     ),
     headline6: TextStyle(
@@ -138,7 +138,7 @@ final cloudyTheme = ThemeData(
     ),
     headline5: TextStyle(
       color: Color(0xff233947),
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: FontWeight.w500,
     ),
     headline6: TextStyle(
@@ -193,7 +193,7 @@ final stormyTheme = ThemeData(
     ),
     headline5: TextStyle(
       color: Color(0xffeae4ca),
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: FontWeight.w500,
     ),
     headline6: TextStyle(
@@ -248,7 +248,7 @@ final windyTheme = ThemeData(
     ),
     headline5: TextStyle(
       color: Color(0xffd4d9d3),
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: FontWeight.w500,
     ),
     headline6: TextStyle(
@@ -303,7 +303,7 @@ final snowyTheme = ThemeData(
     ),
     headline5: TextStyle(
       color: Color(0xff233947),
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: FontWeight.w500,
     ),
     headline6: TextStyle(

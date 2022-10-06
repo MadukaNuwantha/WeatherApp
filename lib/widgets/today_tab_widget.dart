@@ -39,35 +39,37 @@ Widget todayTabWidget(BuildContext context) {
             ),
           ],
         ),
-        Image.asset(
-          weatherProvider.todayForcast.weather.description == 'Sunny'
-              ? 'assets/images/sunny.png'
-              : weatherProvider.todayForcast.weather.description == 'Stormy'
-                  ? 'assets/images/storm.png'
-                  : weatherProvider.todayForcast.weather.description == 'Rainy'
-                      ? 'assets/images/rain.png'
-                      : weatherProvider.todayForcast.weather.description == 'Cloudy'
-                          ? 'assets/images/cloudy.png'
-                          : weatherProvider.todayForcast.weather.description == 'Snowy'
-                              ? 'assets/images/snowy.png'
-                              : 'assets/images/stormy.png',
-          width: MediaQuery.of(context).size.width * 0.8,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Image.asset(
+              weatherProvider.todayForcast.weather.description == 'Sunny'
+                  ? 'assets/images/sunny.png'
+                  : weatherProvider.todayForcast.weather.description == 'Stormy'
+                      ? 'assets/images/storm.png'
+                      : weatherProvider.todayForcast.weather.description == 'Rainy'
+                          ? 'assets/images/rain.png'
+                          : weatherProvider.todayForcast.weather.description == 'Cloudy'
+                              ? 'assets/images/cloudy.png'
+                              : weatherProvider.todayForcast.weather.description == 'Snowy'
+                                  ? 'assets/images/snowy.png'
+                                  : 'assets/images/stormy.png',
+              width: MediaQuery.of(context).size.width * 0.7,
+            ),
+          ],
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                weatherProvider.todayForcast.temperature.toString(),
-                style: GoogleFonts.roboto(textStyle: Theme.of(context).textTheme.headline1),
-              ),
-              Text(
-                '\u2103',
-                style: GoogleFonts.roboto(textStyle: Theme.of(context).textTheme.headline6),
-              ),
-            ],
-          ),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              weatherProvider.todayForcast.temperature.toString(),
+              style: GoogleFonts.roboto(textStyle: Theme.of(context).textTheme.headline1),
+            ),
+            Text(
+              '\u2103',
+              style: GoogleFonts.roboto(textStyle: Theme.of(context).textTheme.headline6),
+            ),
+          ],
         )
       ],
     ),

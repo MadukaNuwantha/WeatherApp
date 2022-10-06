@@ -9,7 +9,7 @@ Widget sixDaysTabWidget(BuildContext context) {
   return Column(
     children: [
       SizedBox(
-        height: MediaQuery.of(context).size.height * 0.8,
+        height: MediaQuery.of(context).size.height * 0.75,
         child: ListView.builder(
           itemCount: 6,
           itemBuilder: (context, index) {

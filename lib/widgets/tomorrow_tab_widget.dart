@@ -51,23 +51,20 @@ Widget tomorrowTabWidget(BuildContext context) {
                           : weatherProvider.tomorrowForcast.weather.description == 'Snowy'
                               ? 'assets/images/snowy.png'
                               : 'assets/images/stormy.png',
-          width: MediaQuery.of(context).size.width * 0.8,
+          width: MediaQuery.of(context).size.width * 0.7,
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                weatherProvider.tomorrowForcast.temperature.toString(),
-                style: GoogleFonts.roboto(textStyle: Theme.of(context).textTheme.headline1),
-              ),
-              Text(
-                '\u2103',
-                style: GoogleFonts.roboto(textStyle: Theme.of(context).textTheme.headline6),
-              ),
-            ],
-          ),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              weatherProvider.tomorrowForcast.temperature.toString(),
+              style: GoogleFonts.roboto(textStyle: Theme.of(context).textTheme.headline1),
+            ),
+            Text(
+              '\u2103',
+              style: GoogleFonts.roboto(textStyle: Theme.of(context).textTheme.headline6),
+            ),
+          ],
         )
       ],
     ),
