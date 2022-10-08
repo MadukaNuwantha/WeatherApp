@@ -54,7 +54,7 @@ Widget todayTabWidget(BuildContext context) {
                               : weatherProvider.todayForcast.weather.description == 'Snowy'
                                   ? 'assets/images/snowy.png'
                                   : 'assets/images/stormy.png',
-              width: MediaQuery.of(context).size.width * 0.7,
+              width: MediaQuery.of(context).size.width * 0.8,
             ),
           ],
         ),

@@ -39,19 +39,24 @@ Widget tomorrowTabWidget(BuildContext context) {
             ),
           ],
         ),
-        Image.asset(
-          weatherProvider.tomorrowForcast.weather.description == 'Sunny'
-              ? 'assets/images/sunny.png'
-              : weatherProvider.tomorrowForcast.weather.description == 'Stormy'
-                  ? 'assets/images/storm.png'
-                  : weatherProvider.tomorrowForcast.weather.description == 'Rainy'
-                      ? 'assets/images/rain.png'
-                      : weatherProvider.tomorrowForcast.weather.description == 'Cloudy'
-                          ? 'assets/images/cloudy.png'
-                          : weatherProvider.tomorrowForcast.weather.description == 'Snowy'
-                              ? 'assets/images/snowy.png'
-                              : 'assets/images/stormy.png',
-          width: MediaQuery.of(context).size.width * 0.7,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Image.asset(
+              weatherProvider.tomorrowForcast.weather.description == 'Sunny'
+                  ? 'assets/images/sunny.png'
+                  : weatherProvider.tomorrowForcast.weather.description == 'Stormy'
+                      ? 'assets/images/storm.png'
+                      : weatherProvider.tomorrowForcast.weather.description == 'Rainy'
+                          ? 'assets/images/rain.png'
+                          : weatherProvider.tomorrowForcast.weather.description == 'Cloudy'
+                              ? 'assets/images/cloudy.png'
+                              : weatherProvider.tomorrowForcast.weather.description == 'Snowy'
+                                  ? 'assets/images/snowy.png'
+                                  : 'assets/images/stormy.png',
+              width: MediaQuery.of(context).size.width * 0.8,
+            ),
+          ],
         ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
